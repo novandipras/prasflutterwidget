@@ -12,10 +12,6 @@ void customInjectionInit(
 Future<void> initInternal() async {
   NavigationService().setupGlobalKeyNavigation();
 
-  injection.registerLazySingleton<RouteGenerator>(
-    () => RouteGenerator(),
-  );
-
   injection.registerLazySingleton<LocalSharedPreferences>(
     () => LocalSharedPreferences(),
   );
